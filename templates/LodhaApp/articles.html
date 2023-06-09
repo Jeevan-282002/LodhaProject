@@ -1,0 +1,208 @@
+{% extends 'LodhaApp/userbase.html' %}
+
+{% load static %}
+
+<!-- custome title -->
+{% block title %}
+<title> Home Page</title>
+{% endblock title %}
+
+<!-- custom css -->
+{% block css %}
+
+{% endblock css %}
+
+<!-- custom js -->
+{% block js %}
+{% endblock js %}
+
+
+{% block body %}
+<div class="container">
+    
+    
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+
+        <!-- heading -->
+        <div class="container text-center">
+            <h1>Userful <span style="color: rgb(169, 100, 4);">Articles</span></h1>
+        </div>
+
+        <!-- table -->
+        <div class="container w-75">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="card border border-secondary text-center" style="width: 15rem; height: 12rem">
+    
+                                <div class="card-body">
+                                    <h5 class="card-title text-warning">Buiding green homes:planet over profit</h5>
+                                    <p class="card-text text-warning">5 september, 2022</p>
+                                    <a href="#scrollspyHeading1"  class="btn btn-outline-warning">View article</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card border border-secondary text-center" style="width: 15rem; height: 12rem">
+    
+                                <div class="card-body">
+                                    <h5 class="card-title text-warning">Embodied carbon in high rise buildings</h5>
+                                    <p class="card-text text-warning">30 Augest, 2022</p>
+                                    <a href="#scrollspyHeading2" class="btn btn-outline-warning">View article</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card border border-secondary text-center" style="width: 15rem; height: 12rem">
+    
+                                <div class="card-body">
+                                    <h5 class="card-title text-warning">Green,sustanable spaces are keys of health</h5>
+                                    <p class="card-text text-warning">30 may, 2022</p>
+                                    <a href="#scrollspyHeading3" class="btn btn-outline-warning">View article</a>
+                                </div>
+                            </div>
+                        </td>
+                        
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <div class="card border border-secondary text-center" style="width: 15rem; height: 12rem">
+    
+                                <div class="card-body">
+                                    <h5 class="card-title text-warning">4 mistake to avoid while buing your dream home
+                                    </h5>
+                                    <p class="card-text text-warning">26 April, 2022</p>
+                                    <a href="#scrollspyHeading4" class="btn btn-outline-warning">View article</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card border border-secondary text-center" style="width: 15rem; height: 12rem">
+    
+                                <div class="card-body">
+                                    <h5 class="card-title text-warning">The World Tower: A prime real estate hotspot in Mumbai
+                                    </h5>
+                                    <p class="card-text text-warning">15 february, 2022</p>
+                                    <a href="#scrollspyHeading5" class="btn btn-outline-warning">View article</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 1 article -->
+        <div id="scrollspyHeading1" class="container shadow p-3 w-75">
+            <img src="{% static 'LodhaApp/images/articles/building.jpg' %}" height="300px" alt="">
+            <h2>Building green homes: planet over profit</h2>
+            <h5>Studies show that green buildings can save up to 30% of energy and 50% of water. Builders can switch energy
+                use to renewable sources during the construction stage itself</h5>
+            <p>
+                As the second-largest employment generator, the contribution of the real estate sector to the growth of the
+                national economy is not new. In recent times, with people realising the significance of owning homes, there
+                has been a structural transformation in housing demand, further resulting in a boost to the sector.
+                Validating the same is a recent report titled ‘Real Estate Industry: Outlook and Challenges’ by Infomerics
+                Valuation and Rating, which states that the Indian real estate industry is on course for sustained high
+                growth at over 75% Y-o-Y for the next three years. An IBEF report too highlights that the industry is
+                expected to reach a $1 trillion market size by 2030 and contribute 13% to the GDP by 2025.
+
+                This scale of growth offers an unprecedented opportunity to move away from resource-intensive and archaic
+                development approaches to a more climate-conscious and low-carbon approach. There is no reason of locking in
+                immense amounts of carbon emissions in the urbanisation that happens during this decisive decade when the
+                most aggressive decarbonisation is the need of the hour. Also, according to the UN Environment Programme,
+                the construction and operation of buildings contribute to around 40% of the total global carbon emissions.
+                Real estate can therefore be the medium of big change by its innate existence across all
+                sustainability-driven concerns.</p>
+        </div>
+
+        <!-- 2 article -->
+        <div id="scrollspyHeading2" class="container shadow p-3 w-75 mt-4">
+            <img src="{% static 'LodhaApp/images/articles/carbon.jpg' %}" height="300px" alt="">
+            <h2>Embodied carbon in high rise buildings - Insights from a baselining study</h2>
+            <p>Dr. Prasad Marepalli, Head of Structural Engineering
+                Aun Abdullah, Head of Sustainability
+
+                The latest IPCC report states that the anthropogenic greenhouse gasses emissions (GHG), leading to global
+                warming, are causing dangerous and widespread disruption in nature and are affecting the lives of billions
+                of people around the world. While buildings contribute to almost 40% of overall global GHG emissions, a
+                large portion of these emissions get locked in at the time of construction of the building itself, also
+                known as embodied carbon. Embodied carbon, or upfront carbon contributes to around 15%-30% of lifecycle
+                emissions in the built environment. Hence, it is essential to curb the use of carbon intensive materials
+                before they lock-in the associated carbon in the environment. The booming urbanization and the fact that we
+                are at the start of the 10-15 year up-cycle in the housing market, makes the need for this transition all
+                the more timely.</p>
+        </div>
+
+        <!-- 3 article -->
+        <div id="scrollspyHeading3" class="container shadow p-3 w-75 mt-4">
+            <img src="{% static 'LodhaApp/images/articles/green.jpg' %}" height="300px" alt="">
+            <h2>Green And Sustainable Living Spaces Are Key For Nurturing Healthy Families</h2>
+
+            <p> Our homes are safe havens for us and our families. With a significant change in lifestyles and the work
+                cultures, the at-home time grew manifold, and the home evolved from being just a physical space to an
+                epicenter of work, play, and life. Being locked in for long, people spent more time with their families,
+                which accentuated the emotional connection associated with one’s home. Everyone realized this emotional need
+                and the importance of owning a home amidst uncertainties along with its positive impact on health and
+                comfort. Especially, the young millennial generation who shifted from being asset-light to investing in
+                properties. As validated by Morgan Stanley’s research, India’s property market sales are expected to grow at
+                an 18% compound annual rate from 2020-25, thanks to the young, educated workforce and the significant growth
+                in their disposable income.
+
+                This increase in demand has considerably boosted the housing sector. According to IBEF, the Indian real
+                estate industry is expected to reach a $1 trillion market size by 2030 and contribute 13% to the GDP by
+                2025. Considering this massive growth, the real estate developers and the tor at large are pivotal in
+                ensuring that the growth progresses sustainably, thereby resulting in a healthier ripple effect on the
+                entire economy and the environment.</p>
+        </div>
+
+        <!-- 4 article -->
+        <div id="scrollspyHeading4" class="container shadow p-3 w-75 mt-4">
+            <img src="{% static 'LodhaApp/images/articles/mistakes.jpg' %}" height="300px" alt="">
+            <h2>4 Mistakes To Avoid While Buying Your Dream Home</h2>
+
+            
+                <h5>not researching enough</h5>
+                <p>Researching a variety of real estate properties before investing in one will help you understand what the
+                    market has to offer. Before zeroing in on a property, make sure that you have visited several properties
+                    that have been developed by different developers. This will help you better understand what can fit into
+                    your budget, in terms of the house’s size, your personal lifestyle, amenities offered, presence of basic
+                    conveniences, connectivity, and social infrastructure.</p>
+
+                <h5>Not checking for hidden costs</h5>
+
+                <p>Most first-time homebuyers tend to miss out on including hidden and additional costs in their budget. These
+                    include tax costs, stamp duty, registration charges, costs of repairs, maintenance costs, costs associated
+                    with packers and movers, home interiors, and so on. It’s important to consider all these costs before
+                    finalising your budget so that you are prepared for the final expenditure.</p>
+
+                <h5>Not choosing the right property</h5>
+
+                <p>Buying a home involves considering many aspects. It's important to take your and your family’s lifestyle,
+                    future needs into account when looking for a home. If you’re planning to live in the home for a long time,
+                    you must consider how appropriate the home is and whether it meets all your needs and requirements.</p>
+
+            <h5> Choosing a developer based on cost alone</h5>
+
+                <p> While you may have to pay a slightly higher premium when you choose a reputed developer, it’s safer to do so
+                than to go with a developer who might charge less but end up costing you in the long run. Choosing a reputed
+                developer helps you avoid issues like getting stuck with a delayed home or a poor-quality home.</p>
+        </div>
+
+        <!-- 5 -->
+        
+        <div id="scrollspyHeading5" class="container shadow p-3 w-75 mt-4">
+            <img src="{% static 'LodhaApp/images/articles/wt_img3.jpg' %}" height="300px" alt="">
+            <h2>The World Tower: A Prime Real Estate Hotspot In Mumbai</h2>
+            <p>Witnessing the huge demand and the growth prospects, Grade A developers are fortifying their presence in Powai. The locality is an ultra-modern suburb that serves as a perfect destination for today’s elite home buyers.
+
+                With the ‘new normal’ advancing in, the world is witnessing a paradigm shift in how we live, think and work. The all-around evolution of people’s lifestyles has led them to re-prioritize and re-evaluate their living choices and eventually integrate the alterations to stay in tandem with their post-pandemic lifestyle goals. This dynamic trend has also translated to homebuying, wherein owning a home has become of utmost importance. Homebuyers' preferences have undergone a massive change, impacting their homebuying decisions.</p>
+        </div>
+    </div>
+
+
+</div>
+{% endblock body %}
+

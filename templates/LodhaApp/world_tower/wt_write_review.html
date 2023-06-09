@@ -1,0 +1,43 @@
+{% extends 'LodhaApp/world_tower/wt_base.html' %}
+
+{% load static %}
+
+<!-- custome title -->
+{% block title %}
+<title>Give Review Page</title>
+{% endblock title %}
+
+<!-- custom css -->
+{% block css %}
+
+{% endblock css %}
+
+<!-- custom js -->
+{% block js %}
+
+{% endblock js %}
+
+
+{% block body %}
+<div class="container text-center">
+    <!-- heading -->
+    <div style="background-color: rgba(205, 194, 119, 0.196);" class="container text-center shadow ">
+        <h2>Give us Review</h2>
+    </div>
+    <div class="container shadow p-3 w-50 mt-3">
+        <form action="{% url 'write_review' %}" method="post">
+            {% csrf_token %}
+            {% for fm in form %}
+            <div class="mb-3">
+                {{fm.label_tag}}
+                {{fm}}
+            </div>
+            {% endfor %}
+
+            <div class="container">
+                <input type="submit" value="Submit" class="btn btn-outline-success">
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock body %}

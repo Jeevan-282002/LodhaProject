@@ -1,0 +1,51 @@
+{% extends 'LodhaApp/world_tower/wt_base.html' %}
+
+{% load static %}
+
+<!-- custome title -->
+{% block title %}
+<title>World Tower Bookings Page</title>
+{% endblock title %}
+
+<!-- custom css -->
+{% block css %}
+
+{% endblock css %}
+
+<!-- custom js -->
+{% block js %}
+
+{% endblock js %}
+
+
+{% block body %}
+<!-- main container -->
+<div class="container text-center">
+
+    <!-- heading -->
+    <div class="container">
+        <h2 class="text-secondary">The World Tower</h2>
+    </div>
+    <div class="container">
+        <h3 class="text-warning">4BHK Booking Form</h3>
+    </div>
+
+    <div style="background-color: rgba(235, 215, 147, 0.312);" class="container w-50 shadow p-3">
+        <form action="{% url 'wt_4bhkbookings' %}" method="POST">
+            {% csrf_token %}
+            {% for fm in form %}
+            <div class="mb-3">
+                <p style="color: rgb(169, 100, 4); font-size: large;" class="m-0 p-0 ">{{fm.label_tag}}</p>
+                {{fm}}
+            </div>
+            {% endfor %}
+
+            <div class="container">
+                <input type="submit" value="submit" class="btn btn-warning">
+            </div>
+        </form>
+
+    </div>
+</div>
+
+{% endblock body %}

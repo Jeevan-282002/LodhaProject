@@ -1,0 +1,59 @@
+{% load static %}
+
+<div class="offcanvas offcanvas-start w-30" tabindex="-1" id="offcanvasExample1" aria-labelledby="offcanvasExampleLabel">
+
+    <div class="offcanvas-body text-center">
+
+        <img src="{% static 'LodhaApp/images/lodhaog.png' %}" height="40px" alt="no image">
+
+        <a class="dropdown-item pt-3" href="{% url 'userhome' %}"><b>Home</b></a>
+        <a class="dropdown-item mt-2" href="{% url 'projects' %}"><b>Properties</b></a>
+        <a class="dropdown-item mt-2" href="{% url 'about' %}"><b>About Lodha</b></a>
+        <a class="dropdown-item mt-2" href="{% url 'bookings' %}"><b>Booking</b></a>
+        <a class="dropdown-item mt-2" href="{% url 'review' %}"><b>Reviews</b></a>
+        
+        
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-end w-30" tabindex="-1" id="offcanvasExample2" aria-labelledby="offcanvasExampleLabel">
+
+    <div class="offcanvas-body text-center">
+
+        <img src="{% static 'LodhaApp/images/lodhaog.png' %}" height="40px" alt="no image">
+        
+        
+
+        <div class="container p-5 border shadow mt-4">
+            <a href="{% url 'adminlogin' %}" class="text-decoration-none">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="{% static 'LodhaApp/images/home/admin.jpg' %}" height="100px" alt="">
+                    </div>
+                    <div class="col-6 pt-4">
+                        <h4>Admin Login</h4>
+                    </div>
+                </div>  
+            </a>    
+        </div>
+        
+    </div>
+</div>
+
+
+<nav style="display: inline-block; " class="navbar navbar-light w-100 ">
+    <nav  class="navbar sticky-top navbar-expand-lg navbar-light  ">
+        <a class="btn btn-outline-dark ms-3 mb-0 " data-bs-toggle="offcanvas" href="#offcanvasExample1" role="button"
+            aria-controls="offcanvasExample1">Menu</a>
+
+        <div style="display: inline-block; " class="container text-center mt-0">
+            <img src="{% static 'LodhaApp/images/lodhaog.png' %}" height="42px" width="175px" alt="no image">
+        </div>
+
+        <a href="#offcanvasExample2" class="btn btn-outline-dark me-5" data-bs-toggle="offcanvas" aria-controls="offcanvasExample2" role="button" >Login</a>
+        </div>
+        </div>
+    </nav>
+</nav>
+
+<hr class="bg-secondary p-0 m-0 ">

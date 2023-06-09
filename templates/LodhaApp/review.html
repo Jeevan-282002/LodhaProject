@@ -1,0 +1,43 @@
+{% extends 'LodhaApp/userbase.html' %}
+
+{% load static %}
+
+<!-- custome title -->
+{% block title %}
+<title>Review Page</title>
+{% endblock title %}
+
+<!-- custom css -->
+{% block css %}
+
+{% endblock css %}
+
+<!-- custom js -->
+{% block js %}
+{% endblock js %}
+
+
+{% block body %}
+<div class="container">
+    <!-- heading -->
+    <div class="container text-center">
+        <h1>All <span  style="color: rgb(169, 100, 4);">Reviews</span></h1>
+    </div>
+    <div class="container">
+        {% for d in data %}
+        <div class="container p-3 mt-3 shadow w-75">
+            <div class="mb-1">
+                <b>{{d.id}}. {{d.name}}</b>
+            </div>
+            <div class="mb-1">
+                <b>{{d.title}}</b>
+            </div>
+            <div class="mb-1">
+                <p>{{d.review}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+{% endblock body %}

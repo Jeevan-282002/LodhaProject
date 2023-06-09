@@ -1,0 +1,83 @@
+{% extends 'LodhaApp/world_tower/wt_base.html' %}
+
+{% load static %}
+
+<!-- custome title -->
+{% block title %}
+<title>WT 4BHK payment Page</title>
+{% endblock title %}
+
+<!-- custom css -->
+{% block css %}
+
+{% endblock css %}
+
+<!-- custom js -->
+{% block js %}
+<script>
+    function otp(){
+        alert("{{otp}}")
+    }
+    // alert("Your OTP is {{otp}}");
+</script>
+{% endblock js %}
+
+
+{% block body %}
+<div class="container">
+    <!-- heading -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-3">
+                <h3 class="text-warning">Payment <span class="text-dark"> Page</span></h3>
+            </div>
+            <div class="col-9">
+            </div>
+        </div>
+        <hr class="bg-seconadry mt-3">
+    </div>
+    <!-- credit card -->
+    <div class="container text-center">
+        <h3>Credit Card</h3>
+    </div>
+    <div class="container w-50 p-3 shadow">
+        
+        
+            <div class="container">
+                <label for="card_number">Card Number</label>
+                <input type="number" class="form-control" name="" id="">
+            </div>
+            <div class="container">
+                <label for="number">Mobile Number</label>
+                <input type="number" class="form-control" name="" id="">
+            </div>
+            
+
+            <div class="container text-center">
+                
+                <button class="btn btn-success" onclick="otp()">Get OTP</button>
+            </div>
+
+        <form action="{% url 'wt_4bhkotp' %}" method="post">
+            {% csrf_token %}    
+
+            <div class="container">
+                <label for="user_otp" >Enter OTP</label>
+                <input type="number" class="form-control" name="user_otp" id="user_otp">
+            </div>
+           
+                <input type="number" hidden value="{{otp}}" name="system_otp" >
+           
+            <div class="container text-center">
+                <input type="submit" class="btn btn-success btn-lg" value="verify">
+            </div>
+
+        </form>
+        
+            
+
+        
+    </div>
+
+</div>
+{% endblock body %}

@@ -1,0 +1,268 @@
+{% extends 'LodhaApp/world_tower/wt_base.html' %}
+
+{% load static %}
+
+<!-- custome title -->
+{% block title %}
+<title>World Tower Amenties Page</title>
+{% endblock title %}
+
+<!-- custom css -->
+{% block css %}
+
+{% endblock css %}
+
+<!-- custom js -->
+{% block js %}
+
+{% endblock js %}
+
+
+{% block body %}
+<!-- main container -->
+<div class="container text-center">
+
+    <!-- heading -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-3">
+                <h4><i class="bi bi-gift-fill"></i></i> AMENTIES AT <span class="text-warning">THE WORLD TOWERS</span>
+                </h4>
+            </div>
+            <div class="col-9">
+            </div>
+        </div>
+        <hr class="bg-seconadry mt-3">
+    </div>
+
+    <!-- carousel -->
+    <div class="container mt-3">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                    aria-label="Slide 8"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="{% static 'LodhaApp/images/wt/wt_a_img4.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <p class="lead"
+                            style="background-color: rgba(255, 255, 255, 0.8); color: rgb(196, 151, 3); font-size: larger; font-weight: bolder;">
+                            The finest residential architecture</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'LodhaApp/images/wt/wt_a_img5.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <p class="lead"
+                            style="background-color: rgba(255, 255, 255, 0.8); color: rgb(196, 151, 3); font-size: larger; font-weight: bolder;">
+                            The indoor pool</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'LodhaApp/images/wt/wt_a_img1.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <p class="lead"
+                            style="background-color: rgba(255, 255, 255, 0.8); color: rgb(196, 151, 3); font-size: larger; font-weight: bolder;">
+                            The finest residential sports facilities in the country</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'LodhaApp/images/wt/wt_a_img6.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <p class="lead"
+                            style="background-color: rgba(255, 255, 255, 0.8); color: rgb(196, 151, 3); font-size: larger; font-weight: bolder;">
+                            Give your heirs and heiresses their own kingdom</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'LodhaApp/images/wt/wt_a_img7.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <p class="lead"
+                            style="background-color: rgba(255, 255, 255, 0.8); color: rgb(196, 151, 3); font-size: larger; font-weight: bolder;">
+                            An indulgently expansive Spa</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'LodhaApp/images/wt/wt_a_img8.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <p class="lead"
+                            style="background-color: rgba(255, 255, 255, 0.8); color: rgb(196, 151, 3); font-size: larger; font-weight: bolder;">
+                            A life steeped in art, music and cultural pursuits is yours to enjoy at The World Towers</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'LodhaApp/images/wt/wt_a_img2.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <p class="lead"
+                            style="background-color: rgba(255, 255, 255, 0.8); color: rgb(196, 151, 3); font-size: larger; font-weight: bolder;">
+                            Shikarband Jain Temple: the estate’s spiritual centre</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'LodhaApp/images/wt/wt_a_img3.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <p class="lead"
+                            style="background-color: rgba(255, 255, 255, 0.8); color: rgb(196, 151, 3); font-size: larger; font-weight: bolder;">
+                            Sports facilities that raise the bar of the city</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <hr class="bg-secondary mt-4">
+
+    <!-- accordian -->
+    <div class="container mt-4">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Poolside and Club W
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+    
+                        <p>- Six Senses Spa</p>
+                        <p>- Fitness centre</p>
+                        <p>- Grand ballroom</p>
+                        <p>- Dance and yoga studio</p>
+                        <p>- Private theatre</p>
+                        <p>- Pool deck</p>
+                        <p>- Temperature controlled indoor pool</p>
+                        <p>- Leisure pool</p>
+                        <p>- Kid’s pool</p>
+                        <p>- Basketball court</p>
+                        <p>- Wooden deck ramp</p>
+                        <p>- Outdoor kids' play area</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        Sports Zone
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <p>- Football turf</p>
+                        <p>- Rock climbing wall</p>
+                        <p>- Athletic track</p>
+                        <p>- Tennis courts</p>
+                        <p>- Lap pool</p>
+                        <p>- Sports arena roof</p>
+                        <p>- Squash courts</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Kid's zone
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <p>- Up hill</p>
+                        <p>- Down hill</p>
+                        <p>- Sand boat</p>
+                        <p>- Water wheel & water gate</p>
+                        <p>- Arch bridge</p>
+                        <p>- Swing</p>
+                        <p>- Archimedes screw</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        Art & Culture Spaces
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                        <p>- Art gallery</p>
+                        <p>- Library</p>
+                        <p>- Jain temple</p>
+                        <p>- Walking track</p>
+                        <p>- Vine screen</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingfive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFive">
+                        Garden Zone
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFive">
+                    <div class="accordion-body">
+                        <p>- The Great Lawn</p>
+                        <p>- Open air amphitheatre</p>
+                        <p>- Long putt</p>
+                        <p>- Garden Pavillion</p>
+                        <p>- Secret grove</p>
+                        <p>- Theatre lawn</p>
+                        <p>- Temple</p>
+                        <p>- Green wall</p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    
+</div>
+
+{% endblock body %}

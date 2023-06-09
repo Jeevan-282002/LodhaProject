@@ -1,0 +1,88 @@
+{% extends 'LodhaApp/world_tower/wt_base.html' %}
+
+{% load static %}
+
+<!-- custome title -->
+{% block title %}
+<title>World Tower location Page</title>
+{% endblock title %}
+
+<!-- custom css -->
+{% block css %}
+
+{% endblock css %}
+
+<!-- custom js -->
+{% block js %}
+
+{% endblock js %}
+
+
+{% block body %}
+<!-- main container -->
+<div class="container text-center">
+    <div class="row">
+        <div class="col-5" style="background-color: rgba(205, 194, 119, 0.196);" >
+
+                <h3>LOCATE</h3>
+                <h3 style="color: rgb(169, 100, 4);">US</h3>
+    
+        </div>
+        <div class="col-7">
+
+        </div>
+
+    </div>
+
+    <!-- body -->
+    <div class="container ">
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static 'LodhaApp/images/wt/wt_img3.jpg' %}" class="mt-5 p-0" width="400px" alt="">
+                <h3 class="text-warning mt-2">The World Towers</h3>
+            </div>
+            <div class="col-8">
+                <a href="https://goo.gl/maps/w9YmgJBKLz9abgEYA"><img
+                        src="{% static 'LodhaApp/images/wt/wt_location.png' %}" width="500px" alt=""></a>
+            </div>
+
+            <a href="https://goo.gl/maps/w9YmgJBKLz9abgEYA"
+                style=" color: rgb(169, 100, 4); background-color: rgba(205, 194, 119, 0.196);"
+                class=" btn btn-lg mt-3">View Full Map</a>
+
+            <hr class="bg-secondary mt-4">
+
+        </div>
+
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-5">
+                    <h3 style="color: rgb(169, 100, 4);">A RARE LIVING EXPERIENCE IN MUMBAI MILE</h3>
+                    <p>
+                        The World Towers occupies pride of place on the Mumbai Mile – a glittering stretch where
+                        landmark
+                        residential and commercial developments rub shoulders with the finest hotels, luxury retail
+                        stores and premium entertainment hubs, bordered by the lush Mahalaxmi Race Course.
+                    </p>
+                </div>
+                <div class="col-7 mt-5">
+                    <p>Bandra-Worli Sea Link~20 mins</p>
+
+                    <p>Domestic & International Airports~30 mins</p>
+
+                    <p>Peninsula Corporate Park~10 mins</p>
+
+                    <p>Palladium & High Street Phoenix~5 mins</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+{% endblock body %}

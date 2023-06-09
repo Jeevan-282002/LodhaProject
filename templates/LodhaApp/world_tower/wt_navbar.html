@@ -1,0 +1,70 @@
+{% load static %}
+
+<div class="offcanvas offcanvas-start w-30" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+    <div class="offcanvas-body text-center">
+
+        <img src="{% static 'LodhaApp/images/lodhalogo.png' %}" height="40px" alt="no image">
+
+        <a class="dropdown-item pt-3" href="{% url 'userhome' %}"><b>Home</b></a>
+        <a class="dropdown-item" href="{% url 'projects' %}"><b>Properties</b></a>
+        <a class="dropdown-item" href="#"><b>About Lodha</b></a>
+        <a class="dropdown-item" href="{% url 'wt_bhkselection' %}"><b>Booking</b></a>
+        <a class="dropdown-item" href="#"><b>Blogs</b></a>
+        <a class="dropdown-item" href="#"><b>Contact us</b></a>
+        <a class="dropdown-item" href="#"><b>My Account</b></a>
+    </div>
+</div>
+
+<!--Main Navigation-->
+<header>
+    <nav style="display: inline-block; " class="navbar navbar-light w-100 ">
+        <nav  class="navbar sticky-top navbar-expand-lg navbar-light  ">
+            <a class="btn btn-outline-dark ms-3 mb-0 " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample">Menu</a>
+    
+            <div style="display: inline-block; " class="container text-center mt-0">
+                <img src="{% static 'LodhaApp/images/wt/wt_logo3.png' %}" height="65px"  alt="no image">
+            </div>
+            </div>
+            </div>
+        </nav>
+    </nav>
+
+    <hr class="bg-secondary m-0 p-0">
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+        <!-- Container wrapper -->
+        <div class="container justify-content-center text-center ">
+            <!-- Left links -->
+            <ul class="navbar-nav flex-row">
+                
+                <li class="nav-item me-4  d-none d-md-inline-block">
+                    <a style="color: rgb(169, 100, 4); font-size: larger;" class="nav-link " href="{% url 'wt_home' %}">About</a>
+                </li>
+                <li class="nav-item me-4  d-none d-md-inline-block">
+                    <a style="color: rgb(169, 100, 4); font-size: larger" class="nav-link" href="{% url 'wt_location' %}">Location</a>
+                </li>
+                <li class="nav-item me-4  d-none d-md-inline-block">
+                    <a style="color: rgb(169, 100, 4); font-size: larger" class="nav-link" href="{% url 'wt_plan' %}">Plan</a>
+                </li>
+                <li class="nav-item me-4  d-none d-md-inline-block">
+                    <a style="color: rgb(169, 100, 4); font-size: larger" class="nav-link" href="{% url 'wt_amenties' %}">Amenties</a>
+                </li>
+                <li class="nav-item me-3 d-none d-md-inline-block">
+                    <a style="color: rgb(169, 100, 4); font-size: larger" class="nav-link" href="{% url 'wt_gallery' %}">Gallery</a>
+                </li>
+                <li class="nav-item me-3 d-none d-md-inline-block">
+                    <a style="color: rgb(169, 100, 4); font-size: larger" class="nav-link" href="{% url 'wt_bhkselection' %}">Bookings</a>
+                </li>
+                <li class="nav-item me-3 d-none d-md-inline-block">
+                    <a style="color: rgb(169, 100, 4); font-size: larger" class="nav-link" href="{% url 'write_review' %}">Give Review</a>
+                </li>
+                
+            </ul>
+            <!-- Left links -->
+
+
+        </div>
+        <!-- Container wrapper -->
+    </nav>

@@ -1,0 +1,63 @@
+{% extends 'LodhaApp/world_tower/wt_base.html' %}
+
+{% load static %}
+
+<!-- custome title -->
+{% block title %}
+<title>WT 4BHK varification Page</title>
+{% endblock title %}
+
+<!-- custom css -->
+{% block css %}
+
+{% endblock css %}
+
+<!-- custom js -->
+{% block js %}
+
+{% endblock js %}
+
+
+{% block body %}
+<div class="container">
+    <!-- heading -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-3">
+                <h3 class="text-warning">Payment <span class="text-dark"> Page</span></h3>
+            </div>
+            <div class="col-9">
+            </div>
+        </div>
+        <hr class="bg-seconadry mt-3">
+    </div>
+    <!-- credit card -->
+    <div class="container text-center">
+        <h3>Credit Card</h3>
+    </div>
+    <div class="container w-50 p-3 shadow">
+        <form action="{% url 'paymentsuccess' %}" method="post">
+            {% csrf_token %}
+
+            <div class="container">
+                
+                <label for="Amount">Enter Amount</label>
+                <input type="number" class="form-control" name="Amount" id="Amount">
+            </div>
+
+            <div class="container">
+
+                <label for="Password">Enter Password</label>
+                <input type="password" class="form-control"  name="Password" id="Password">
+            </div>
+            
+            <div class="container text-center">
+                <input type="submit" class="btn btn-success btn-lg" value="Pay">
+            </div>
+
+        </form>
+        
+    </div>
+
+</div>
+{% endblock body %}

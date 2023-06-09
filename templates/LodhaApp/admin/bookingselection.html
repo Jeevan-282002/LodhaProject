@@ -1,0 +1,49 @@
+{% extends 'LodhaApp/adminbase.html' %}
+
+{% load static %}
+
+<!-- custome title -->
+{% block title %}
+<title>Project selection Page</title>
+{% endblock title %}
+
+<!-- custom css -->
+{% block css %}
+
+{% endblock css %}
+
+<!-- custom js -->
+{% block js %}
+{% endblock js %}
+
+
+{% block body %}
+<div class="container">
+    <!-- heading -->
+    <div style="background-color: rgba(205, 194, 119, 0.196);" class="container text-center shadow">
+        <h2>Select Project</h2>
+    </div>
+
+    <!-- body -->
+    <div class="container mt-5">
+        <div class="row ">
+            <div class="col-6 text-center">
+                <img src="{% static 'LodhaApp/images/wt/wt_img3.jpg' %}" width="400px" height="350px" alt="">
+                <div class="card-body">
+                    <h5 class="card-title text-warning">The World Towers</h5>
+                    
+                    <a href="{% url 'wt_bookings' %}" class="btn btn-outline-warning">View Bookings </a>
+                </div>
+            </div>
+            <div class="col-6 text-center">
+                <img src="{% static 'LodhaApp/images/mq/mq_a_1.jpg' %}" width="400px" height="350px" alt="">
+                <div class="card-body">
+                    <h5 class="card-title text-warning">Lodha Marquise</h5>
+                
+                <a href="{% url 'mq_bookings' %}" class="btn btn-outline-warning">View Bookings</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

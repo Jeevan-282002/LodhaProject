@@ -1,0 +1,63 @@
+{% extends 'LodhaApp/userbase.html' %}
+
+{% load static %}
+
+<!-- custome title -->
+{% block title %}
+<title>Projects Page</title>
+{% endblock title %}
+
+<!-- custom css -->
+{% block css %}
+
+{% endblock css %}
+
+<!-- custom js -->
+{% block js %}
+{% endblock js %}
+
+
+{% block body %}
+<!-- featured projects -->
+<div class="container text-center">
+    <div class="container">
+        <h2>Featured <span style="color: rgb(169, 100, 4);"> Projects</span></h2>
+        <p class="lead">
+            We have delivered some of the world's finest developments.
+        </p>
+    </div>
+    
+    <!-- projects -->
+    <div class="container text-center">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="card border border-warning text-center" style="width: 30rem;">
+                            <img src="{% static 'LodhaApp/images/wt/wt_img3.jpg' %}" class="card-img-top" alt="..."
+                                height="275px">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">The World Towers</h5>
+                                <p class="card-text">India's finest living experience</p>
+                                <a href="{% url 'wt_home' %}" class="btn btn-outline-warning">View Property</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card border border-warning text-center" style="width: 30rem;">
+                            <img src="{% static 'LodhaApp/images/mq/mq_a_1.jpg' %}" class="card-img-top" alt="..."
+                                height="275px">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">Lodha Marquise</h5>
+                                <p class="card-text">Mumbai's most elite suburbs</p>
+                                <a href="{% url 'mq_home' %}" class="btn btn-outline-warning">View Property</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+    
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock body %}

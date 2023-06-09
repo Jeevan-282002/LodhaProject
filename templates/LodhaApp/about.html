@@ -1,0 +1,122 @@
+{% extends 'LodhaApp/userbase.html' %}
+
+{% load static %}
+
+<!-- custome title -->
+{% block title %}
+<title>About Page</title>
+{% endblock title %}
+
+<!-- custom css -->
+{% block css %}
+{% endblock css %}
+
+<!-- custom js -->
+{% block js %}
+{% endblock js %}
+
+
+{% block body %}
+<div class="container border mt-5 text-center">
+    <div class="container mt-2">
+        <h2>About <span style="color: rgb(169, 100, 4);"> Lodha</span></h2>
+    </div>
+        <div class="container">
+            <p class="lead">
+                Crafting world’s finest developments
+            </p>
+        </div>
+    
+
+    <!-- about -->
+    <div class="row">
+        <div class="col-7">
+            <p>At Lodha, our passion is to create landmarks that meet global standards, epitomise the values of our family, and are built on a legacy of trust spanning four decades. We are guided by our vision of ‘Building a Better Life’ and believe that homes transform lives. A home is a springboard for the dreams and aspirations, for living a healthier and fulfilled life.</p>
+            <p>Every one of our developments delivers the highest level of design and craftsmanship, uncompromising quality, unparalleled service – putting Lodha developments in the league of the world’s finest. Our homes are ensconced in developments where we bring alive multitude of experiences – all geared to help one live their best life. Be it the carefully crafted vast open spaces, the manicured greens, the world-class gyms, the sports arenas to even the places of worship among other things, are built to enrich lives.</p>
+
+        </div>
+        <div class="col-5">
+            <div class="container">
+                <img src="{% static 'LodhaApp/images/wt/wt_img3.jpg' %}" width="400px" height="275px" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- qualities` -->
+    <!-- 1 -->
+    <div class="container border mt-5">
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static 'LodhaApp/images/about/img1.jpg' %}" height="220px" alt="">
+            </div>
+            <div class="col-8 mt-3">
+                <h3>01</h3>
+                <h4>Our presence</h4>
+                <p>We continue to be forerunner when it comes to adopting global best practices and innovations in construction to deliver with speed and safety. This, coupled with deep understanding of the consumer needs and demands of the evolving times, we have been able to deliver homes and offices to meet requirement of every consumer segment.</p>
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="container border mt-5">
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static 'LodhaApp/images/about/img2.jpg' %}" height="220px" alt="">
+            </div>
+            <div class="col-8 mt-3">
+                <h3>02</h3>
+                <h4>Our Services</h4>
+                <p>We offer a host of value-added services for our customers to aid them through every stage of the pre and post property owning journey. We endeavour to provide a hassle free experience to our customers.</p>
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="container border mt-5">
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static 'LodhaApp/images/about/img3.jpg' %}" height="220px" alt="">
+            </div>
+            <div class="col-8 mt-3">
+                <h3>03</h3>
+                <h4>Our People</h4>
+                <p>An experienced and effective leadership and management team enables us to anticipate and adapt to challenging market trends and economic forces. Equipped with technical expertise, excellent domain knowledge and extensive cross-functional experience, they nurture interactive relationships with the client community.</p>
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="container border mt-5">
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static 'LodhaApp/images/about/img4.jpg' %}" height="220px" alt="">
+            </div>
+            <div class="col-8 mt-3">
+                <h3>04</h3>
+                <h4>Recognition</h4>
+                <p>Our endless endeavor of ‘Leadership through Innovation’ has time and again set new benchmarks, which has won us prestigious awards and helped us gain recognition over the years.</p>
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="container border mt-5">
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static 'LodhaApp/images/about/img4.jpg' %}" height="220px" alt="">
+            </div>
+            <div class="col-8 mt-3">
+                <h3>05</h3>
+                <h4>Social Initiatives</h4>
+                <p>Our vision – ‘Building a Better Life’ – extends to our commitment to society and our utmost priority is always keeping our employees, communities and environment safe. We are committed to 100% implementation of International EHS Management Standards, and a Zero-tolerance approach to compromises or shortcuts.</p>
+
+            </div>
+        </div>
+    </div>
+
+</div> 
+{% endblock body %}

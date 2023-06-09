@@ -1,0 +1,56 @@
+{% extends 'LodhaApp/marquise/mq_base.html' %}
+
+{% load static %}
+
+<!-- custome title -->
+{% block title %}
+<title>Marquise BHK selction Page</title>
+{% endblock title %}
+
+<!-- custom css -->
+{% block css %}
+
+{% endblock css %}
+
+<!-- custom js -->
+{% block js %}
+
+{% endblock js %}
+
+
+{% block body %}
+<div class="container text-center">
+    <div class="container mt-2">
+        <h2>Select BHK type</h2>
+    </div>
+
+    <div class="container mt-5">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td  style="padding: 75px;" class="border border-warning shadow">
+                        <div  class="container">
+                            <a  href="{% url 'mq_3bhkbookings' %}" class="text-decoration-none">
+                                <div class="text-warning">Type</div>
+                                <h5>3 BED LUXE</h5>
+                                <div class="text-warning">Starting</div>
+                                <h5>8.15cr</h5>
+                            </a>
+                        </div>
+                    </td>
+                    <td  style="padding: 75px;" class="border border-warning shadow ">
+                        <div class="container">
+                            <a  href="{% url 'mq_4bhkbookings' %}" class="text-decoration-none">
+                                <div class="text-warning">Type</div>
+                                <h5>4 BED LUXE</h5>
+                                <div class="text-warning">Starting</div>
+                                <h5>9.19cr</h5>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock body %}

@@ -1,0 +1,56 @@
+{% extends 'LodhaApp/world_tower/wt_base.html' %}
+
+{% load static %}
+
+<!-- custome title -->
+{% block title %}
+<title>World Tower BHK selction Page</title>
+{% endblock title %}
+
+<!-- custom css -->
+{% block css %}
+
+{% endblock css %}
+
+<!-- custom js -->
+{% block js %}
+
+{% endblock js %}
+
+
+{% block body %}
+<div class="container text-center">
+    <div class="container mt-2">
+        <h2>Select BHK type</h2>
+    </div>
+
+    <div class="container mt-5">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td  style="padding: 75px;" class="border border-warning shadow">
+                        <div  class="container">
+                            <a  href="{% url 'wt_4bhkbookings' %}" class="text-decoration-none">
+                                <div class="text-warning">Type</div>
+                                <h5>4 BED LUXE</h5>
+                                <div class="text-warning">Starting</div>
+                                <h5>10.85cr</h5>
+                            </a>
+                        </div>
+                    </td>
+                    <td  style="padding: 75px;" class="border border-warning shadow ">
+                        <div class="container">
+                            <a  href="{% url 'wt_5bhkbookings' %}" class="text-decoration-none">
+                                <div class="text-warning">Type</div>
+                                <h5>5 BED LUXE</h5>
+                                <div class="text-warning">Starting</div>
+                                <h5>11.50cr</h5>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock body %}
